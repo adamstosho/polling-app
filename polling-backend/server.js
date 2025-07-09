@@ -24,25 +24,24 @@ const io = require('socket.io')(server, {
     },
 });
 
-// Connect to MongoDB
+
 connectDB();
 
-// Middleware
+
 app.use(cors({
     origin: [
         'https://polling-app-srjt.vercel.app',
-        "https://polling-app-sand.vercel.app",
-        
+
     ],
     credentials: true,
 }));
 app.use(morgan('dev'));
 app.use(express.json());
 
-// Swagger Setup
+
 const swaggerOptions = {
     definition: require('./config/swagger.json'),
-    apis: ['./routes/*.js'], // Scan route files for potential JSDoc
+    apis: ['./routes/*.js'], 
 };
 
 if (process.env.NODE_ENV === 'production') {
@@ -69,12 +68,12 @@ app.use('/api/auth', authRoutes);
 app.use('/api/polls', pollRoutes);
 app.use('/api/users', userRoutes);
 
-// Health check endpoint
+
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'ok' });
 });
 
-// Socket.io authentication middleware
+
 io.use((socket, next) => {
     const token = socket.handshake.query.token;
     if (!token) {
@@ -89,7 +88,7 @@ io.use((socket, next) => {
     }
 });
 
-// Socket.io connection
+
 io.on('connection', (socket) => {
     socket.on('join-poll', (pollId) => {
         socket.join(`poll-${pollId}`);
@@ -99,7 +98,7 @@ io.on('connection', (socket) => {
     });
 });
 
-// Patch vote endpoint to emit real-time updates
+
 const pollRouter = require('express').Router();
 pollRouter.post('/:id/vote', async (req, res, next) => {
     try {
@@ -120,7 +119,7 @@ pollRouter.post('/:id/vote', async (req, res, next) => {
     }
 });
 
-// 404 handler
+
 app.use((req, res) => {
     res.status(404).json({ message: 'Route not found.' });
 });

@@ -1,6 +1,12 @@
 # PollFlow - Real-Time Polling Application
 
-A modern, full-stack polling application built with Next.js, Node.js, and real-time capabilities. Create, share, and vote on polls with live results and beautiful analytics.
+## The Problem
+
+Traditional polling systems suffer from lack of transparency, delayed results, and poor user engagement. Users can't see real-time updates, results are often hidden until voting ends, and sharing polls is cumbersome. This creates distrust in the voting process and reduces participation.
+
+## The Solution
+
+PollFlow solves these problems by providing **transparent, live voting** where everyone can see results updating in real-time. Users can create polls, share them instantly via QR codes or links, and watch votes come in live with beautiful visualizations. No more waiting for results - see democracy in action, transparently and instantly.
 
 ## 🚀 Features
 
@@ -23,10 +29,10 @@ A modern, full-stack polling application built with Next.js, Node.js, and real-t
 - **Tailwind CSS** - Utility-first CSS framework
 - **Framer Motion** - Smooth animations and transitions
 - **Radix UI** - Accessible component primitives
+- **Socket.io** - For real-time management
 - **React Hook Form** - Form handling and validation
 - **Zod** - Schema validation
 - **Chart.js** - Data visualization
-- **Socket.io Client** - Real-time communication
 - **Lucide React** - Beautiful icons
 
 ### Backend
@@ -34,68 +40,15 @@ A modern, full-stack polling application built with Next.js, Node.js, and real-t
 - **Express.js** - Web framework
 - **MongoDB** - NoSQL database
 - **Mongoose** - MongoDB object modeling
-- **Socket.io** - Real-time bidirectional communication
 - **JWT** - Authentication tokens
+- **Socket.io** - For real-time management
 - **bcryptjs** - Password hashing
 - **Swagger** - API documentation
 - **Rate Limiting** - Request throttling
 
-## 📦 Installation
 
-### Prerequisites
-- Node.js 18+ 
-- MongoDB (local or cloud)
-- npm or yarn
-
-### Frontend Setup
-
-1. Navigate to the frontend directory:
-```bash
-cd frontend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env.local` file:
-```env
-NEXT_PUBLIC_API_URL=http://localhost:5000
-NEXT_PUBLIC_SOCKET_URL=http://localhost:5000
-```
-
-4. Start the development server:
-```bash
-npm run dev
-```
 
 The frontend will be available at `http://localhost:3000`
-
-### Backend Setup
-
-1. Navigate to the backend directory:
-```bash
-cd polling-backend
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Create a `.env` file:
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/pollflow
-JWT_SECRET=your_jwt_secret_here
-JWT_REFRESH_SECRET=your_refresh_secret_here
-```
-
-4. Start the development server:
-```bash
-npm run dev
-```
 
 The backend will be available at `http://localhost:5000`
 
@@ -139,6 +92,8 @@ The backend will be available at `http://localhost:5000`
 
 For detailed API documentation, see [API_DOCUMENTATION.md](polling-backend/API_DOCUMENTATION.md)
 
+For swagger documentation: - Kindly access this link - https://polling-app-gleq.onrender.com/api-docs/ 
+
 ## 🔧 Development
 
 ### Project Structure
@@ -169,6 +124,27 @@ polling_app/
 **Backend:**
 - `npm run dev` - Start development server with nodemon
 - `npm start` - Start production server
+
+## Preview
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.21.22_71973b5d.jpg)
+
+**Create Account Page**
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.47.51_1d967844.jpg)
+**Login Page**
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.49.11_e519d2b5.jpg)
+**Profile page that shows list of polls a user has created**
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.50.35_f8bfd62b.jpg)
+**Poll Result Page**
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.51.35_700b1778.jpg)
+**Poll Result Page**
+
+[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.52.30_f49fa183.jpg)
+**Page for Creating Poll**
 
 ## 🔒 Security Features
 
@@ -208,4 +184,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ by the PollFlow team 
+Made with ❤️ by the ART_Redox ©️ 2025.
