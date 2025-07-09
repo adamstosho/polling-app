@@ -127,23 +127,23 @@ polling_app/
 
 ## Preview
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.21.22_71973b5d.jpg)
+[!screenshots](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.21.22_71973b5d.jpg)
 
 **Create Account Page**
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.47.51_1d967844.jpg)
+![screenshots](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.47.51_1d967844.jpg)
 **Login Page**
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.49.11_e519d2b5.jpg)
+![screenshots](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.49.11_e519d2b5.jpg)
 **Profile page that shows list of polls a user has created**
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.50.35_f8bfd62b.jpg)
+![screenshots](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.50.35_f8bfd62b.jpg)
 **Poll Result Page**
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.51.35_700b1778.jpg)
+![screenshots](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.51.35_700b1778.jpg)
 **Poll Result Page**
 
-[!screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.52.30_f49fa183.jpg)
+![screenshot](/frontend/public/WhatsApp%20Image%202025-07-09%20at%2021.52.30_f49fa183.jpg)
 **Page for Creating Poll**
 
 ## 🔒 Security Features
