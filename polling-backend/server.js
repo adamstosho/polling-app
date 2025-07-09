@@ -30,11 +30,9 @@ connectDB();
 // Middleware
 app.use(cors({
     origin: [
-        'http://localhost:3000',
         'https://polling-app-srjt.vercel.app',
-        "https://polling-app-sand.vercel.app"
-
-        // Add production domains here
+        "https://polling-app-sand.vercel.app",
+        
     ],
     credentials: true,
 }));
@@ -73,7 +71,7 @@ app.use('/api/users', userRoutes);
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'ok' });
+    res.status(200).json({ status: 'ok' });
 });
 
 // Socket.io authentication middleware

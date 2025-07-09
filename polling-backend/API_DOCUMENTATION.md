@@ -109,7 +109,7 @@
 {
   "question": "Your poll question?",
   "options": ["Option 1", "Option 2", "Option 3"],
-  "expiresAt": "2024-12-31T23:59:59.000Z" // (optional, ISO date string)
+  "expiresAt": "2025-12-31T23:59:59.000Z" // (optional, ISO date string)
 }
 ```
 - **Response:**
