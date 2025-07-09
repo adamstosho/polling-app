@@ -32,6 +32,7 @@ app.use(cors({
     origin: [
         'http://localhost:3000',
         'https://polling-app-srjt.vercel.app',
+        "https://polling-app-sand.vercel.app"
 
         // Add production domains here
     ],
@@ -49,7 +50,7 @@ const swaggerOptions = {
 if (process.env.NODE_ENV === 'production') {
     swaggerOptions.definition.servers = [
         {
-            url: 'https://polling-app-gleq.onrender.com/api',
+            url: 'https://polling-app-4ke0.onrender.com/api',
             description: 'Deployed Server',
         },
     ];
